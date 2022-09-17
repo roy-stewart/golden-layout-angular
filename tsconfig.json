@@ -10,6 +10,9 @@
     "paths": {
       "golden-layout-angular": [
         "dist/golden-layout-angular"
+      ],
+      "@angular/*": [
+        "./node_modules/@angular/*"
       ]
     },
     "noPropertyAccessFromIndexSignature": true,
