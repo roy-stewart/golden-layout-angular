@@ -6,6 +6,7 @@
     "@angular/core": "^14.1.0"
   },
   "dependencies": {
+    "golden-layout": "^2.5.0",
     "tslib": "^2.3.0"
   }
 }
