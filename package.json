@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "generate": "ng generate",
+    "build": "ng build golden-layout-angular",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

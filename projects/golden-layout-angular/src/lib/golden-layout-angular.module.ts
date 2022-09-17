@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
-import { GoldenLayoutAngularComponent } from './golden-layout-angular.component';
+import { GoldenLayoutComponent } from './golden-layout-component/golden-layout.component';
 
 
 
 @NgModule({
   declarations: [
-    GoldenLayoutAngularComponent
+    GoldenLayoutComponent
   ],
   imports: [
   ],
   exports: [
-    GoldenLayoutAngularComponent
+    GoldenLayoutComponent
   ]
 })
 export class GoldenLayoutAngularModule { }

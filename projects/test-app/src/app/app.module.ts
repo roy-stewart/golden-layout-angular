@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { GoldenLayoutAngularModule } from 'projects/golden-layout-angular/src/public-api';
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +9,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    GoldenLayoutAngularModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
