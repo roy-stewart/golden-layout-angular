@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LayoutConfig } from 'projects/golden-layout-angular/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'test-app';
+  exampleConfig: LayoutConfig = {
+    root: {
+        type: 'row',
+        content:[
+          {
+            type: "component",
+            componentType: "simpleText",
+          }
+        ]
+    }
+  };
 }

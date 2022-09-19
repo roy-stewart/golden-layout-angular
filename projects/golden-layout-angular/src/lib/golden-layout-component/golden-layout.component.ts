@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { GoldenLayout, LayoutConfig } from "golden-layout";
 
 @Component({
@@ -8,6 +8,8 @@ import { GoldenLayout, LayoutConfig } from "golden-layout";
   ]
 })
 export class GoldenLayoutComponent implements AfterViewInit {
+
+  @Input() config!: LayoutConfig;
 
   @ViewChild('goldenLayoutRoot') layoutRoot!: ElementRef; 
 
@@ -26,18 +28,15 @@ export class GoldenLayoutComponent implements AfterViewInit {
   }
 
   private registerComponents(): void {
-    // register components
+    this.goldenLayout.registerComponentFactoryFunction("simpleText", () => {
+      const el = document.createElement("p");
+      el.textContent = "simple text";
+      return el;
+    });
   }
 
   private loadConfig(): void {
-    // load config
-    const config: LayoutConfig = {
-      root: {
-          type: 'row',
-          content:[]
-      }
-    };
-    this.goldenLayout.loadLayout(config);
+    this.goldenLayout.loadLayout(this.config);
   }
 
 }
