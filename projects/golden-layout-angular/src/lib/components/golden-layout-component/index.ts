@@ -1,0 +1,1 @@
+export { GoldenLayoutComponent } from './golden-layout.component';

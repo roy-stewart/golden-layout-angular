@@ -3,7 +3,7 @@
  */
 
 export * from './lib/golden-layout-angular.service';
-export * from './lib/components/golden-layout-component/golden-layout.component';
+export { GoldenLayoutComponent } from './lib/components';
 export * from './lib/golden-layout-angular.module';
 
 export * from './lib/types';
