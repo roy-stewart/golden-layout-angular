@@ -20,4 +20,8 @@ describe('GoldenLayoutComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // it.todo('should register all components in golden layout');
+
+  // it.todo('should load the config in golden layout');
 });
